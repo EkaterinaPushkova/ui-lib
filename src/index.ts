@@ -1,3 +1,1 @@
-(() => {
-  console.log("webpack worked");
-})();
+export * from "./components";
