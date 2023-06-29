@@ -2,11 +2,11 @@
   "name": "ui-lib",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,13 +20,15 @@
   "homepage": "https://github.com/EkaterinaPushkova/ui-lib#readme",
   "devDependencies": {
     "@babel/core": "^7.22.5",
+    "@babel/cli": "7.22.5",
     "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
-    "react": "^18.2.0",
     "sass": "^1.63.6",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
@@ -36,6 +38,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react": "^18.2.0"
   }
 }
