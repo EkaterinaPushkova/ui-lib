@@ -6,13 +6,19 @@
     "strict": true,
     "skipLibCheck": true,
 
-    "jsx": "react-jsx",
-    "module": "es6",
+    "jsx": "react",
     "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
-    "noUnusedParameters": false
+    "noUnusedParameters": false,
+    "declaration": true,
+    "declarationDir": "dist",
+    "allowJs": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false
   }
 }
