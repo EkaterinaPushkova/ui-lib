@@ -5,8 +5,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
 
     "jsx": "react",
+    "baseUrl": ".",
     "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "node",
@@ -19,6 +21,11 @@
     "module": "esnext",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false
-  }
+    "noEmit": false,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
