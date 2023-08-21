@@ -3,3 +3,6 @@
 
 # directories
 /dist
+
+# macos
+.DS_Store
